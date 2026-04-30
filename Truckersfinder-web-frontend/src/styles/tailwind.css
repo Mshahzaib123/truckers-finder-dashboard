@@ -1,0 +1,164 @@
+@import url("../fonts/fonts.css");
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid currentColor;
+    border-radius: 100%;
+    transform: translateY(-0.075em);
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 11.5px;
+    height: 11.5px;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 10px 10px #38008F;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.checkbox input {
+    position: absolute;
+    width: 0;
+    left: 50px;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkbox .checkmark {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 1px;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 3px;
+    outline: 1px solid #151515;
+    transition: all 0.2s ease;
+}
+
+.checkbox:hover .checkmark {
+    background: #f4f4f5;
+    transition: all 0.2s ease;
+}
+
+.checkbox input[type="checkbox"]:checked~.checkmark {
+    background-image: url(../images/check-icon.svg) !important;
+    background-size: cover;
+    background-position: center;
+    outline: 1px solid #38008F;
+}
+
+label.ImgUpload input[type="file"] {
+    position: absolute;
+    top: -1000px;
+}
+
+.ImgUpload {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 12.5px 16px;
+    background: #38008F;
+    color: #fff;
+    display: inline-block;
+    font-family: "THICCCBOI-SemiBold";
+    transition: .3s;
+}
+
+.ImgUpload:hover {
+    background: #151515;
+}
+
+.ImgUpload:active {
+    background: #9fa1a0;
+}
+
+.ImgUpload:invalid+span {
+    color: #000000;
+}
+
+.ImgUpload:valid+span {
+    color: #ffffff;
+}
+.PlansCard_otr input[type="radio"]{
+    border: 1px solid #2CD6F9;
+}
+.PlansCard_otr input[type="radio"]::before{
+    box-shadow: inset 10px 10px #2CD6F9;
+}
+
+@media (max-width: 768px){
+    .dashboard_main .main_content_inr{
+        height: calc(100vh - 140px);
+        
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1023px){
+    .businessPage .inpuy_otr,.EquipmentPage .inpuy_otr,.FactoringPage .inpuy_otr{
+        width: 100%;
+    }
+    .businessPage .selectInput{
+        width: 100%;
+    } 
+}
+
+
+
+
+.data_table_row:hover td:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    background-color: #2CD6F9;
+    transition: width 0.2s ease-in;
+}
+
+.data_table_row:hover td:first-child::before {
+    width: 0.3%;
+}
