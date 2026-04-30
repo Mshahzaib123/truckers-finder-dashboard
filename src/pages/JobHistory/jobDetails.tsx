@@ -176,7 +176,7 @@ const JobHistoryDetailsPage = () => {
                             </div>
                             <img
                                 src={stopImage}
-                                alt="stop-image"
+                                alt="route stop"
                                 className=" sm:hidden row-span-3 "
                             />
 
@@ -194,7 +194,7 @@ const JobHistoryDetailsPage = () => {
                             </div>
                             <img
                                 src={stopImage}
-                                alt="stop-image"
+                                alt="route stop"
                                 className=" sm:block hidden"
                             />
                         </div>

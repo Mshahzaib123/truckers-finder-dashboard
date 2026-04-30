@@ -44,7 +44,7 @@ function BusinessInformation({
     ]
     const [phone, setPhone] = useState('')
 
-    const [selectedState, setSelectedState] = useState({
+    const [, setSelectedState] = useState({
         label: 'Gujrat',
         value: 'Guj',
     })

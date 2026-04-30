@@ -80,8 +80,8 @@ function StateMap({ onStateChange ,states }: any) {
     useEffect(() => {
         setRows(generateRows())
         onStateChange(States)
-
-    }, [States,states])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [States, states])
 
 
 
@@ -91,8 +91,8 @@ function StateMap({ onStateChange ,states }: any) {
         updatedStates[stateName].clickHandler = (event: any) =>
             stateClick(event.target.dataset);
         }
-          setStates(updatedStates);
-
+        setStates(updatedStates);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     const stateClick = (data: { name: string }) => {
         setStates((prevStates) => {
@@ -115,9 +115,6 @@ function StateMap({ onStateChange ,states }: any) {
         })
     }
 
-    useEffect(()=>{
-
-    },states)
     const mapHandler=(event: React.MouseEvent<HTMLDivElement>) => {
     };
     return (

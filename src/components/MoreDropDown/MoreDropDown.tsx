@@ -32,7 +32,7 @@ function MoreDropDown({ id, bidClick, MyCarriers }: Props) {
             </button>
             <div className="drop_down_otr absolute z-[10] right-0 top-[13px] pt-[14px] opacity-0 invisible duration-[.3s]">
                 <ul className='drop_ul bg-light rounded-8 w-[160px] border-[1px] border-border-bordercolor shadow-Shadow3'>
-                    {MyCarriers == false || MyCarriers == null ? (
+                    {MyCarriers === false || MyCarriers === null ? (
                         <>
                             <DropLi className='drop_li border-b-[1px] border-[#d8d8d8]'>
                                 <Link to='' className='drop_linkk flex items-center gap-[8px] py-[12px] px-[8px]'>

@@ -20,7 +20,7 @@ const SidebarWrapper = styled.div.attrs({
     className:
         'sidebar_wrapper max-w-[240px] w-[100%] h-[100vh] bg-dark rounded-tr-[24px] p-[24px] sm:hidden',
 })``
-const LinkkText = styled.span(({}) => [tw`text-[16px] leading-[18px]`])
+const LinkkText = styled.span(() => [tw`text-[16px] leading-[18px]`])
 function Sidebar() {
     return (
         <SidebarWrapper>

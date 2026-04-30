@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import FormHeading from '../components/FormHeading/FormHeading'
 import Input from '../components/Input/Input'
 import Checkbox from '../components/Checkbox/Checkbox'
@@ -8,9 +8,6 @@ import Button from '../components/Button/Button'
 
 import SignupImg from '../images/signup-img.png'
 import LogoImg from '../images/brand-logo2.png'
-import SocialIcon1 from '../images/facebook-icon.svg'
-import SocialIcon2 from '../images/google-icon.svg'
-import SocialIcon3 from '../images/apple-icon.svg'
 
 const SignupWrapper = styled.div.attrs({
     className: 'signup_page bg-bgShade5 relative p-[10px] w-[100%] h-[100vh]',
@@ -45,7 +42,6 @@ const BrandLogo = styled.img.attrs({
     className: 'logo_img w-[auto] h-[70px] object-contain object-center',
 })``
 function Signup() {
-    const navigate = useNavigate()
     return (
         <SignupWrapper>
             <SignImg src={SignupImg} alt="img" />

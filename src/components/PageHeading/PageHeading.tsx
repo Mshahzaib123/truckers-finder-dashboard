@@ -5,7 +5,7 @@ import tw from 'twin.macro'
 const HeadingWrapper = styled.div.attrs({
     className: 'heading_otr mb-[20px]',
 })``
-const PagHeading = styled.h1(({}) => [
+const PagHeading = styled.h1(() => [
     tw`text-[28px] leading-[32px] text-black font-semibold`,
 ])
 

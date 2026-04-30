@@ -2,7 +2,7 @@ import React from 'react'
 import styled ,{css} from 'styled-components'
 import tw from 'twin.macro'
 
-const CheckLabel = styled.label(({ }) => [
+const CheckLabel = styled.label(() => [
     tw`text-[14px] leading-[17px] text-dark flex items-center rounded-lg gap-[12px] max-w-fit bg-bgShade3 py-[16px] px-[20px]`,
     css`
     white-space: nowrap; // Prevent text from breaking to the next line

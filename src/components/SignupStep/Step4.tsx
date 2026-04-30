@@ -8,10 +8,10 @@ import tw from 'twin.macro'
 import CouponImg from '../../images/coupon-icon.svg'
 import PlansCard from './PlansCard'
 
-const InputLabel = styled.label(({}) => [
+const InputLabel = styled.label(() => [
     tw`text-[14px] leading-[18px] text-textcolor1`,
 ])
-const CustomInput = styled.input(({}) => [
+const CustomInput = styled.input(() => [
     tw`text-[16px] leading-[18px] text-textcolor1 py-[13px]`,
 ])
 const CouponInputOtr = styled.div`

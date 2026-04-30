@@ -112,18 +112,18 @@ const SelectPlaceHolder = styled.p`
 `
 
 const CarrierDb: React.FC = () => {
-    const { DbData, FilterData } = useAppSelector((state) => state.CarrierDb)
+    const { FilterData } = useAppSelector((state) => state.CarrierDb)
     const dispatch = useAppDispatch()
     useEffect(() => {
         dispatch(getCarrierDbData())
-    }, [])
+    }, [dispatch])
 
     type Column = {
         key: string
         label: string
         sortable: boolean
     }
-    const [columns, setColumns] = useState([
+    const [columns] = useState([
         { key: 'mcNumber', label: 'MC No', sortable: true },
         { key: 'usdot', label: 'USDOT', sortable: true },
         { key: 'legalName', label: 'Legal-Name', sortable: true },

@@ -9,7 +9,6 @@ import { useAppDispatch, useAppSelector } from '../hooks/redux.hooks'
 import { TUser } from '../types/app.types'
 import { getUsers } from '../store/slices/profile.slice'
 import AddPeopleModal from '../components/AddPeopleModal/addPeopleModal'
-import Alert from '../components/Alert/Alert'
 
 const PeoplePage = () => {
     const { users } = useAppSelector((state) => state.profile)
@@ -42,7 +41,7 @@ const PeoplePage = () => {
 
     useEffect(() => {
         dispatch(getUsers())
-    }, [])
+    }, [dispatch])
     return (
         <main className="p-6">
             <AddPeopleModal

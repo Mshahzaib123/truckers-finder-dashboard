@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Route, BrowserRouter, Routes, useLocation } from 'react-router-dom'
+import { Route, BrowserRouter, Routes, Navigate } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
 import ProfilePage from './pages/ProfilePage'
@@ -8,14 +8,11 @@ import Signup from './pages/Signup'
 import Login from './pages/Login'
 import SignupSetps from './pages/SignupSetps'
 import CarriesPage from './pages/Carriers/CarriersPage'
-import './App.css'
 import AddCarrier from './pages/Carriers/AddCarrier'
 import Chat from './pages/Chat'
 import MyCarriersPage from './pages/Carriers/MyCarriersPage'
 import MyCarrierDetails from './pages/Carriers/MyCarrierDetails'
 import Wallet from './pages/Wallet/Wallet'
-
-import './App.css'
 import AvailableLoads from './pages/AvailableLoads'
 import CreateLoad from './pages/CreateLoad'
 import MyLiveLoad from './pages/MyLiveLoad'
@@ -57,6 +54,7 @@ function App() {
                         <Header />
                         <MainContentInr className="main_content_inr bg-bgShade2 overflow-y-auto">
                             <Routes>
+                                <Route path="/" element={<Navigate to="/profile" replace />} />
                                 <Route
                                     path="profile"
                                     element={<ProfilePage />}

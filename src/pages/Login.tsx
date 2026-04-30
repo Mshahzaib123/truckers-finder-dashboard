@@ -8,9 +8,6 @@ import Button from '../components/Button/Button'
 
 import SignupImg from '../images/signup-img.png'
 import LogoImg from '../images/brand-logo2.png'
-import SocialIcon1 from '../images/facebook-icon.svg'
-import SocialIcon2 from '../images/google-icon.svg'
-import SocialIcon3 from '../images/apple-icon.svg'
 
 const SignupWrapper = styled.div.attrs({
     className: 'signup_page bg-bgShade5 relative p-[10px] w-[100%] h-[100vh]',

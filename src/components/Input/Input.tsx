@@ -5,7 +5,7 @@ import tw from 'twin.macro'
 const InputWrapper = styled.div.attrs({
     className: 'inpuy_otr flex flex-col items-start gap-[4px]',
 })``
-const InputLabel = styled.label(({}) => [
+const InputLabel = styled.label(() => [
     tw`text-[12px] leading-[15px] text-textcolor1`,
 ])
 
@@ -41,8 +41,8 @@ const PrePostContent = styled.div<PrePostContentProps>(({ position, type }) => {
 
 const CustomInput = styled.input<InputPedding>(({ Icontype }) => [
     tw`text-[14px] leading-[18px] text-textcolor1 py-[11px] px-[12px] border-[1px] border-border-bordercolor rounded-8 pl-4 pr-4`,
-    Icontype == 'pre' && tw`pl-9`,
-    Icontype == 'post' && tw`pr-9`,
+    Icontype === 'pre' && tw`pl-9`,
+    Icontype === 'post' && tw`pr-9`,
 ])
 
 type Props = {

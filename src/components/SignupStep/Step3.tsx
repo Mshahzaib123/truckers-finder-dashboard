@@ -7,10 +7,10 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import CustomSelect2 from '../CustomSelect2/CustomSelect2'
 
-const InputLabel = styled.label(({}) => [
+const InputLabel = styled.label(() => [
     tw`text-[14px] leading-[18px] text-textcolor1`,
 ])
-const CustomInput = styled.input(({}) => [
+const CustomInput = styled.input(() => [
     tw`text-[16px] leading-[18px] text-textcolor1 py-[19px] px-[16px] border-[1px] border-border-bordercolor rounded-r-8`,
 ])
 

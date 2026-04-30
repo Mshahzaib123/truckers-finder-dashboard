@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import styled , {css} from 'styled-components'
+import React, { useState } from 'react'
+import styled from 'styled-components'
 import Button from '../../../components/Button/Button'
 import tw from 'twin.macro'
 import Input from '../../../components/Input/Input'
@@ -28,19 +28,6 @@ const SmallHeading = styled.h2`
     ${tw`text-[16px] font-bold`}
 `
 
-const CheckBox=styled.input`
-${tw `w-[30%] rounded-xl`},
-`
-const CheckBoxWrapper=styled.div`
-${tw `w-[10%] flex flex-row justify-between m-[2%]`},
-${css `
-input[type=checkbox] {
-  accent-color: #2CD6F9;
-  color:white;
-  border-radius:0.5rem;
-}
-`}
-`
 type StateDataItem = {
   id: number;
   clickHandler?: (event: any) => void;
@@ -55,7 +42,7 @@ type StatesType = {
 
 
 function Preferences({ handleStep }: { handleStep: (step: number) => void }) {
-  const [selectedServiceArea, setSelectedServiceArea] = useState('')
+  const [, setSelectedServiceArea] = useState('')
   const [usaStates, setUsaStates] = useState<StatesType>({
     "AL": {
       id: 1,

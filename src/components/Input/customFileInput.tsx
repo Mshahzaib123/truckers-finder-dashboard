@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from 'react';
-import styled ,{css}from 'styled-components'
+import styled from 'styled-components'
 import tw from 'twin.macro'
 
 const InputWrapper = styled.div.attrs({
@@ -62,7 +62,7 @@ function FileInput({
     const [selectedFileName, setSelectedFileName] = useState<string>('Choose The File');
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const { name, files } = e.target;
+        const { files } = e.target;
         const selectedFile = files && files.length > 0 ? files[0] : null;
     
         setSelectedFileName(selectedFile ? selectedFile.name : 'Choose The File');

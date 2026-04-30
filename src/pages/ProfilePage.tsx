@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled, { css } from 'styled-components'
 import PageHeading from '../components/PageHeading/PageHeading'
 import SectionHeading from '../components/SectionHeading/SectionHeading'
@@ -11,7 +11,6 @@ import ProfileImg from '../images/profile-img.png'
 import CancelIcon from '../images/cancel-icon.svg'
 import ImgUploader from '../components/ImgUploader/ImgUploader'
 import tw from 'twin.macro'
-import BorderButton from '../components/Button/BorderButton'
 
 export const PagContentWrapper = styled.div.attrs({
     className: 'profile_content_inr p-[24px] bg-white rounded-16',
@@ -46,16 +45,6 @@ export const InfoWrapper = styled.div.attrs({
     className: 'flex flex-col gap-[16px]',
 })``
 const ProfilePage = () => {
-    const [strip, setStrip] = useState(false)
-
-    const ToggleStrip = (type: string) => {
-        console.log(type.includes('on'))
-        if (type.includes('on')) {
-            setStrip(true)
-        } else {
-            setStrip(false)
-        }
-    }
     return (
         <ProfilePageMain className="profile_page p-6">
             <PageHeading HeadingWrapperClass="" HeadingText="Profile" />

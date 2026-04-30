@@ -3,9 +3,6 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import { Link } from 'react-router-dom'
 
-import SearchIcon from '../../images/search-icon.svg'
-import MailIcon from '../../images/mail-icon.svg'
-import NotifyIcon from '../../images/notify-icon.svg'
 import ArrowDown from '../../images/arrow-down.svg'
 import BagIcon from '../../images/bag-icon.svg'
 import ProfileImg from '../../images/profile-img.png'
@@ -16,11 +13,7 @@ const HeaderWrapper = styled.div.attrs({
     className:
         'header_wrapper relative z-[100]  w-[100%] py-[21px] md:py-[16px] px-[40px] lg:px-[24px] gap-[20px] md:gap-[16px]',
 })``
-const IconWrapper = styled.div.attrs({
-    className:
-        'icon_otr flex items-center justify-center w-[34px] h-[34px] rounded-8 bg-bgShade1 cursor-pointer',
-})``
-export const SearchInput = styled.input(({}) => [
+export const SearchInput = styled.input(() => [
     tw`text-[16px] leading-[18px] text-textcolor1 bg-bgShade1 py-[13px] pl-[50px] pr-[12px] border-[1px] border-transparent rounded-8`,
 ])
 const ProfileWrapper = styled.div`

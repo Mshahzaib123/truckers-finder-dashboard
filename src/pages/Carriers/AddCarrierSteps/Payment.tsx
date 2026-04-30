@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Button from '../../../components/Button/Button'
 import tw from 'twin.macro'
@@ -38,7 +38,6 @@ ${tw `my-3`}
 `
 
 function Payment({ handleStep }: { handleStep: (step: number) => void }) {
-    const [phone,setPhone]=useState("")
     return (
         <>
             <div className="flex flex-col w-[100%] h-[100%] PaymentPage">

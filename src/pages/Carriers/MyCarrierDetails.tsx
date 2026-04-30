@@ -1,10 +1,9 @@
-import React, { useState, useRef, ChangeEvent } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHeading from '../../components/FormHeading/PageHeading';
 import { PagContentWrapper } from '../ProfilePage';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import Input from '../../components/Input/Input';
-import { ReactComponent as File } from '../../images/file-icon.svg';
 import { ReactComponent as Delete } from '../../images/delete-icon.svg';
 import { ReactComponent as Visa } from '../../images/visa.svg';
 import CustomSelect from '../../components/Select';
@@ -12,7 +11,7 @@ import { RouteTypeContainer } from "../Carriers/CarriersPage";
 import RadioBtn from '../../components/RadioBtn/RadioBtn';
 import { Route } from "../Carriers/CarriersPage";
 import Collapse from '../../components/Collapse';
-import { styled ,css} from 'styled-components';
+import { styled } from 'styled-components';
 import tw from 'twin.macro';
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
@@ -525,7 +524,7 @@ const MyCarrierDetails = () => {
                             <div
                                 key={index}
                                 className={`mb-[0px] pb-[0px] border-[0px] ${
-                                    index != 0 ? 'border-t-[1px]' : ''
+                                    index !== 0 ? 'border-t-[1px]' : ''
                                 }`}
                             >
                                 <Collapse

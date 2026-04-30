@@ -5,7 +5,7 @@ type Props = {
     CopyTextClass: string
 }
 function CopyText({CopyTextClass}:Props) {
-    const [textToCopy, setTextToCopy] = useState(
+    const [textToCopy] = useState(
         'https://truckersfinder.com/liveloads/track1214123123'
     );
     const [isCopied, setIsCopied] = useState(false);

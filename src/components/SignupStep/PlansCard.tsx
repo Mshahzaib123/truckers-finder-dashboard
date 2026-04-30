@@ -1,17 +1,17 @@
-import React,{useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import tw from 'twin.macro'
 import RadioBtn from '../RadioBtn/RadioBtn'
 
 import CheckIcon from '../../images/check-icon3.svg'
 
-const PriceText = styled.h1(({ }) => [
+const PriceText = styled.h1(() => [
     tw`text-[32px] leading-[36px] text-black font-semibold`,
 ]);
-const CheckImg = styled.img(({ }) => [
+const CheckImg = styled.img(() => [
     tw`w-[16px] h-[16px] object-contain object-center`,
 ]);
-const PlanText = styled.span(({ }) => [
+const PlanText = styled.span(() => [
     tw`text-[14px] leading-[18px] text-black`,
 ]);
 const RadioButton = styled.div`

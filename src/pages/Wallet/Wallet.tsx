@@ -16,7 +16,7 @@ import { styled, css } from 'styled-components'
 import tw from 'twin.macro'
 import StatusBadge from '../../components/StatusBadge/StatusBadge'
 
-const Heading = styled.h1(({}) => [
+const Heading = styled.h1(() => [
     tw`text-[36px] font-[600] leading-[41.51px] text-black`,
 ])
 
@@ -153,7 +153,7 @@ function Wallet() {
         `}
     `
 
-  const [data, setData] = useState(sampleData)
+  const [data] = useState(sampleData)
 
     return (
         <div className="p-6">

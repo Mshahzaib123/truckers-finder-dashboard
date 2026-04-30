@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'twin.macro'
 
-const CustomButton = styled.button(({}) => [
+const CustomButton = styled.button(() => [
     tw`text-[14px] flex justify-center space-x-2  items-center leading-[16px] text-primarycolor bg-transparent border-[1px] border-primarycolor py-[12.5px] px-[12px] rounded-8 min-w-[150px] rounded-8`,
 ])
 

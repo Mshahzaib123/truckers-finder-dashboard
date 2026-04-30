@@ -81,10 +81,10 @@ const IconButton = styled.button`
     border: 1px solid #38008f;
     border-radius: 8px;
 `
-const CustomInput = styled.input(({}) => [
+const CustomInput = styled.input(() => [
     tw`text-[14px] leading-[18px] text-textcolor1 py-[11px] pr-[12px] border-[1px] border-border-bordercolor rounded-r-8`,
 ])
-const InputLabel = styled.label(({}) => [
+const InputLabel = styled.label(() => [
     tw`text-[12px] leading-[15px] text-textcolor1`,
 ])
 const InputMain = styled.div.attrs({

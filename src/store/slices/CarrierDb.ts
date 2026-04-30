@@ -125,12 +125,12 @@ export const carrierDbSlice = createSlice({
         filterByOperation: (state, action) => {
             console.log('act', action.payload)
             state.FilterData = state.DbData.filter((row) => {
-                return row.operationClassification == action.payload
+                return row.operationClassification === action.payload
             })
         },
         filterByCargoCarried: (state, action) => {
             state.FilterData = state.DbData.filter((row) => {
-                return row.cargoCarried == action.payload
+                return row.cargoCarried === action.payload
             })
         },
         resetFilter: (state) => {

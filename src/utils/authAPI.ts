@@ -68,11 +68,6 @@ export const revokeRequest = async <T>(
 }
 
 export const refreshSession = () => {
-    return async (dispatch: AppDispatch) => {
-        const args = {
-            type: 'refreshSession',
-            align: 'center',
-            disableCloseModal: true,
-        }
-    }
+    return async (_dispatch: AppDispatch) => {}
+
 }
